@@ -1,14 +1,18 @@
 {
   "expo": {
-    "name": "QRAPP",
-    "slug": "QRAPP",
+    "name": "SANG",
+    "slug": "sang",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "qrapp",
+    "scheme": "sang",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "SANG uses the camera to scan QR codes and save the contact they contain."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +21,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["android.permission.CAMERA"]
     },
     "web": {
       "output": "static",
@@ -25,6 +30,12 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "SANG uses the camera to scan QR codes and save the contact they contain."
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -34,7 +45,8 @@
             "imageWidth": 76
           }
         }
-      ]
+      ],
+      "expo-sharing"
     ],
     "experiments": {
       "typedRoutes": true,
