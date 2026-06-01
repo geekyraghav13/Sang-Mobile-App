@@ -1,56 +1,35 @@
-# Welcome to your Expo app 👋
+# SANG
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Share your contact details with a single scan.**
 
-## Get started
+SANG is a mobile app that turns your name, phone number, and email into a personal
+QR code. Anyone with the app can scan it to instantly save you as a contact — no
+typing, no paper cards, no internet required.
 
-1. Install dependencies
+It works both ways: show your code from the **My Card** tab, or open the **Scan**
+tab to collect someone else's details into your **Contacts**.
 
-   ```bash
-   npm install
-   ```
+## Documentation
 
-2. Start the app
+Full, non-technical documentation lives in the [`docs/`](./docs/README.md) folder:
 
-   ```bash
-   npx expo start
-   ```
+- [Overview](./docs/overview.md)
+- [How it works](./docs/how-it-works.md)
+- [Features](./docs/features.md)
+- [Privacy](./docs/privacy.md)
+- [Getting started](./docs/getting-started.md)
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Run it
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Then open the project in **Expo Go** on a physical phone (the scanner needs a real
+camera). See [Getting started](./docs/getting-started.md) for the full walkthrough.
 
-### Other setup steps
+## Built with
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+[Expo](https://expo.dev) · [React Native](https://reactnative.dev) ·
+[Expo Router](https://docs.expo.dev/router/introduction)
